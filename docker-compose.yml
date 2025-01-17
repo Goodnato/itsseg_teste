@@ -1,0 +1,9 @@
+services:
+
+  java:
+    image: openjdk:18-jdk-slim
+    container_name: itsseg_java
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    tty: true
