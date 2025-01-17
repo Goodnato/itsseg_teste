@@ -39,7 +39,7 @@ Uma estratégia eficiente para lidar com isso é eliminar todas as vogais presen
 
 O desafio é criar uma função que receba um texto e devolva uma nova versão sem nenhuma vogal.  
 
-Por exemplo, ao processar a frase `"Este site é para perdedores LOL!"`, o resultado seria `"sts st pr prdrs LL!"`.  
+Por exemplo, ao processar a frase `"This website is for losers LOL!"`, o resultado seria `"sts st pr prdrs LL!"`.  
 
 ```java
 public class ExercicioDoisTest {
@@ -82,4 +82,34 @@ Complete a função que aceita um parâmetro string e inverte cada palavra na st
 ```java
 "This is an example!" ==> "sihT si na !elpmaxe"
 "double  spaces"      ==> "elbuod  secaps"
+```
+
+## 6 - Fechando em soma
+
+Crie uma função que retorne a soma dos dígitos formados a partir do primeiro e do último dígito, até o centro do número.
+
+**Exemplo:**
+```java
+2520 ➞ 72
+
+# The first and last digits are 2 and 0.
+# 2 and 0 form 20.
+# The second digit is 5 and the second to last digit is 2.
+# 5 and 2 form 52.
+# 20 + 52 = 72
+
+121 ➞ 13
+# 11 + 2
+
+1039 ➞ 22
+# 19 + 3
+
+22225555 ➞ 100
+# 25 + 25 + 25 + 25
+```
+
+**Notas**
+```java
+Se o número tiver um número ímpar de dígitos, basta adicionar o número de um único dígito no centro (veja o exemplo nº 1).
+Qualquer número preenchido com zeros conta como um único dígito (veja o exemplo nº 2).
 ```
