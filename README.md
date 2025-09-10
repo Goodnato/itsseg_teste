@@ -106,8 +106,34 @@ Dado um texto, retorne a quantidade de caracteres distintos (desconsiderando esp
 "banana"      ➝ 3   (b, a, n)
 ```
 
-**Notas**
+## 8 - Interseção de arrays
+
+Crie uma função que receba dois arrays e retorne apenas os elementos comuns entre eles
+
+**Exemplo:**
 ```php
-Se o número tiver um número ímpar de dígitos, basta adicionar o número de um único dígito no centro (veja o exemplo nº 1).
-Qualquer número preenchido com zeros conta como um único dígito (veja o exemplo nº 2).
+[1, 2, 3, 4], [3, 4, 5, 6] ➝ [3, 4]  
+["a", "b", "c"], ["c", "d"] ➝ ["c"]
+```
+
+## 9 - Compactar string (Run-Length Encoding)
+
+Implemente um algoritmo que compacte uma string contando repetições consecutivas de caracteres.
+
+**Exemplo:**
+```php
+"aaabbc" ➝ "a3b2c1"  
+"xxxxxyyyz" ➝ "x5y3z1"
+```
+
+## 10 - Validar parênteses balanceados
+
+Crie uma função que determine se uma string tem parênteses corretamente balanceados.
+
+**Exemplo:**
+```php
+"(())"   ➝ true  
+"(()"    ➝ false  
+"())("   ➝ false  
+"()()()" ➝ true
 ```
