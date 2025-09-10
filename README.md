@@ -1,7 +1,7 @@
 
 # Desafio de Programação
 
-Crie um repositório no seu GITHUB, resolva as questões abaixo e passe o link para avaliarmos as respostas.  
+Crie um repositório no seu GITHUB, resolva as questões abaixo e nos envie o link para avaliarmos as respostas.  
 :D  
 
 ---
@@ -14,21 +14,9 @@ Por exemplo, a sentença `"Quero faxina nas locadoras de video: jogue blitz com 
 Dado um texto, determine se ele é pangramático ou não. Retorne `True` caso seja, e `False` caso contrário.  
 Desconsidere números e símbolos de pontuação na verificação.  
 
-```java
-public class ExercicioUmTest {
-    @Test
-    public void test1() {
-        String pangram1 = "Quero faxina nas locadoras de video: jogue blitz com whisky PM";
-        TesteUm pc = new TesteUm();
-        assertEquals(true, pc.check(pangram1));
-    }
-    @Test
-    public void test2() {
-        String pangram2 = "You shall not pass!";
-        TesteUm pc = new TesteUm();
-        assertEquals(false, pc.check(pangram2));
-    }
-}
+```php
+var_dump(isPagramatica("Quero faxina nas locadoras de video: jogue blitz com whisky PM")); // true
+var_dump(isPagramatica("You shall not pass!")); // false
 ```
 
 ## 2 - Remover vogais de comentários ofensivos
@@ -41,16 +29,10 @@ O desafio é criar uma função que receba um texto e devolva uma nova versão s
 
 Por exemplo, ao processar a frase `"This website is for losers LOL!"`, o resultado seria `"sts st pr prdrs LL!"`.  
 
-```java
-public class ExercicioDoisTest {
-    public void test1() {
-        assertEquals("Ths wbst s fr lsrs LL!", ExercicioDois.disemvowel("This website is for losers LOL!"));
-
-        assertEquals("N ffns bt, Yr wrtng s mng th wrst 'v vr rd", ExercicioDois.disemvowel("No offense but, Your writing is among the worst I've ever read"));
-
-        assertEquals("Wht r y,  cmmnst?", ExercicioDois.disemvowel("What are you, a communist?"));
-    }
-}
+```php
+var_dump(removeVowel("This website is for losers LOL!") == "Ths wbst s fr lsrs LL!"); // true
+var_dump(removeVowel("No offense but, Your writing is among the worst I've ever read") == "N ffns bt, Yr wrtng s mng th wrst 'v vr rd");
+var_dump(removeVowel("What are you, a communist?") == "Wht r y,  cmmnst?"); 
 ```
 
 ## 3 - Encontrar o maior e o menor número em uma sequência
@@ -58,10 +40,10 @@ public class ExercicioDoisTest {
 Nesta pequena tarefa, você recebe uma sequência de números separados por espaços e deve retornar o maior e o menor número.  
 
 **Exemplos:**  
-```java
-highAndLow("1 2 3 4 5") // return "5 1"
-highAndLow("1 2 -3 4 5") // return "5 -3"
-highAndLow("1 9 3 4 -5") // return "9 -5"
+```php
+echo highAndLow("1 2 3 4 5");  // 5 1
+echo highAndLow("1 2 -3 4 5"); // 5 -3
+echo highAndLow("1 9 3 4 -5"); // 9 -5
 ```
 
 ## 4 - Verificar se uma string termina com outra
@@ -69,9 +51,9 @@ highAndLow("1 9 3 4 -5") // return "9 -5"
 Complete a solução para que ela retorne verdadeiro se o primeiro argumento (string) passado terminar com o segundo argumento (também uma string).  
 
 **Exemplos:**  
-```java
-solution('abc', 'bc') // returns true
-solution('abc', 'd') // returns false
+```php
+var_dump(solution("abc", "bc")); // true
+var_dump(solution("abc", "d"));  // false
 ```
 
 ## 5 - Inverter palavras em uma frase
@@ -79,9 +61,9 @@ solution('abc', 'd') // returns false
 Complete a função que aceita um parâmetro string e inverte cada palavra na string. Todos os espaços na string devem ser mantidos.  
 
 **Exemplos:**  
-```java
-"This is an example!" ==> "sihT si na !elpmaxe"
-"double  spaces"      ==> "elbuod  secaps"
+```php
+echo reverseWords("This is an example!"); // "sihT si na !elpmaxe"
+echo reverseWords("double  spaces");      // "elbuod  secaps"
 ```
 
 ## 6 - Fechando em soma
@@ -89,7 +71,7 @@ Complete a função que aceita um parâmetro string e inverte cada palavra na st
 Crie uma função que retorne a soma dos dígitos formados a partir do primeiro e do último dígito, até o centro do número.
 
 **Exemplo:**
-```java
+```php
 2520 ➞ 72
 
 # The first and last digits are 2 and 0.
@@ -109,7 +91,23 @@ Crie uma função que retorne a soma dos dígitos formados a partir do primeiro 
 ```
 
 **Notas**
-```java
+```php
+Se o número tiver um número ímpar de dígitos, basta adicionar o número de um único dígito no centro (veja o exemplo nº 1).
+Qualquer número preenchido com zeros conta como um único dígito (veja o exemplo nº 2).
+```
+
+## 7 - Contar caracteres únicos
+
+Dado um texto, retorne a quantidade de caracteres distintos (desconsiderando espaços e pontuação).
+
+**Exemplo:**
+```php
+"hello world" ➝ 7   (h, e, l, o, w, r, d)
+"banana"      ➝ 3   (b, a, n)
+```
+
+**Notas**
+```php
 Se o número tiver um número ímpar de dígitos, basta adicionar o número de um único dígito no centro (veja o exemplo nº 1).
 Qualquer número preenchido com zeros conta como um único dígito (veja o exemplo nº 2).
 ```
