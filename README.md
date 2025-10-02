@@ -66,37 +66,13 @@ echo reverseWords("This is an example!"); // "sihT si na !elpmaxe"
 echo reverseWords("double  spaces");      // "elbuod  secaps"
 ```
 
-## 6 - Fechando em soma
-
-Crie uma função que retorne a soma dos dígitos formados a partir do primeiro e do último dígito, até o centro do número.
-
-**Exemplo:**
-```php
-2520 ➞ 72
-
-# The first and last digits are 2 and 0.
-# 2 and 0 form 20.
-# The second digit is 5 and the second to last digit is 2.
-# 5 and 2 form 52.
-# 20 + 52 = 72
-
-121 ➞ 13
-# 11 + 2
-
-1039 ➞ 22
-# 19 + 3
-
-22225555 ➞ 100
-# 25 + 25 + 25 + 25
-```
-
 **Notas**
 ```php
 Se o número tiver um número ímpar de dígitos, basta adicionar o número de um único dígito no centro (veja o exemplo nº 1).
 Qualquer número preenchido com zeros conta como um único dígito (veja o exemplo nº 2).
 ```
 
-## 7 - Contar caracteres únicos
+## 6 - Contar caracteres únicos
 
 Dado um texto, retorne a quantidade de caracteres distintos (desconsiderando espaços e pontuação).
 
@@ -106,7 +82,7 @@ Dado um texto, retorne a quantidade de caracteres distintos (desconsiderando esp
 "banana"      ➝ 3   (b, a, n)
 ```
 
-## 8 - Interseção de arrays
+## 7 - Interseção de arrays
 
 Crie uma função que receba dois arrays e retorne apenas os elementos comuns entre eles
 
@@ -116,7 +92,7 @@ Crie uma função que receba dois arrays e retorne apenas os elementos comuns en
 ["a", "b", "c"], ["c", "d"] ➝ ["c"]
 ```
 
-## 9 - Compactar string (Run-Length Encoding)
+## 8 - Compactar string (Run-Length Encoding)
 
 Implemente um algoritmo que compacte uma string contando repetições consecutivas de caracteres.
 
@@ -126,7 +102,7 @@ Implemente um algoritmo que compacte uma string contando repetições consecutiv
 "xxxxxyyyz" ➝ "x5y3z1"
 ```
 
-## 10 - Validar parênteses balanceados
+## 9 - Validar parênteses balanceados
 
 Crie uma função que determine se uma string tem parênteses corretamente balanceados.
 
